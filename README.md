@@ -16,3 +16,17 @@ Agriculture is a critical sector for global food supply, yet crop diseases conti
 ## SDG Alignment
 **SDG-2: Zero Hunger**  
 Early detection of plant diseases helps reduce crop losses and improves food production, supporting global food security.
+
+## Dataset
+
+This project uses the **PlantVillage dataset**, a publicly available and expertly curated dataset for plant disease classification.
+
+- **Source:** Kaggle – PlantVillage Dataset  
+- **Link:** https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset  
+- **Images:** ~54,000 RGB (color) images  
+- **Crops:** Apple, Tomato, Potato, Grape, Corn, and others  
+- **Classes:** Healthy and multiple disease categories  
+
+The dataset also provides grayscale and segmented image variants; however, this project utilizes **only the color images** to preserve full RGB information, which is essential for Vision Transformer–based models.
+
+Images are organized into class-wise folders, and labels are inferred directly from directory names.
